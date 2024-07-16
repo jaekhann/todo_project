@@ -7,6 +7,7 @@ import java.util.List;
 
 public class TodoRowMapper {
     public Todo toDomain(ResultSet resultSet) throws SQLException {
+
         return new Todo(
                 resultSet.getLong("id"),
                 resultSet.getString("title"),
